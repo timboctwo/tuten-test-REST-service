@@ -10,8 +10,9 @@ Es una llamada post, donde se debera de declarar el Header
 	Content-Type : 'application/json'
 	
 Adicionalmente, se deben de agregar los siguientes parametros para enviar al servidor:
+
 	{
-  "hora": "15:23:12",
+	"hora": "15:23:12",
 	"timezone": -5
 	}
 
