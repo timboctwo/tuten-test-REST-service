@@ -6,7 +6,8 @@ Por motivos tecnicos, se uso el Lenguaje PHP con ayuda del framework Codeingiter
 
 El servicio a consultar tiene el nombre de esta en la siguiente direccion: http://beta.timbocktu.com/tuten-test-REST-service/index.php/Api/dateFormat.
 
-Es una llamada post, donde se debera de declarar el Header 
+Es una llamada post, donde se debera de declarar el Header
+
 	Content-Type : 'application/json'
 	
 Adicionalmente, se deben de agregar los siguientes parametros para enviar al servidor:
