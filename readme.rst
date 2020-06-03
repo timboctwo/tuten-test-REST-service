@@ -2,7 +2,7 @@
 Problema 2
 ###################
 
-Por motivos tecnicos, se uso el Lenguaje PHP con ayuda del framework Codeingiter en un servidor Apache,
+Por motivos tecnicos, se uso el Lenguaje PHP con ayuda del framework Codeingiter en un servidor Apache.
 
 El servicio a consultar tiene el nombre de esta en la siguiente direccion: http://beta.timbocktu.com/tuten-test-REST-service/index.php/Api/dateFormat.
 
@@ -32,6 +32,8 @@ Donde se retorna la respuesta:
 		
 		}
 	}
+
+Este servicio se preobo en los clientes **Advanced REST client**, **Insomnia REST client** y desde el navegador web.
 
 ###################
 Interpretacion del servicio
