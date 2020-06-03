@@ -17,6 +17,22 @@ Adicionalmente, se deben de agregar los siguientes parametros para enviar al ser
 	"timezone": -5
 	}
 
+Donde se retorna la respuesta:
+
+	{
+	
+	"status": "success",
+	
+	"message": "Exito en el cambio de Zona horaria",
+	
+	"response": {
+		"time": "20:23:12",
+		
+		"timezone": "UTC"
+		
+		}
+	}
+
 ###################
 Interpretacion del servicio
 ###################
