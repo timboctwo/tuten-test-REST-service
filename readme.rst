@@ -1,70 +1,24 @@
 ###################
-What is CodeIgniter
+Problema 2
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Por motivos tecnicos, se uso el Lenguaje PHP con ayuda del framework Codeingiter en un servidor Apache,
 
-*******************
-Release Information
-*******************
+El servicio a consultar tiene el nombre de esta en la siguiente direccion: http://beta.timbocktu.com/tuten-test-REST-service/index.php/Api/dateFormat.
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+Es una llamada post, donde se debera de declarar el Header 
+	Content-Type : 'application/json'
+	
+Adicionalmente, se deben de agregar los siguientes parametros para enviar al servidor:
+	{
+  "hora": "15:23:12",
+	"timezone": -5
+	}
 
-**************************
-Changelog and New Features
-**************************
+###################
+Interpretacion del servicio
+###################
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+De acuerdo con lo mencionado en el problema 2, se interpreto la creación del servicio de la siguiente manera:
 
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+el parametro *hora*, se encuentra en la zona horaria interpretada en el parametro *timezone* por lo cual, el servicio asigna la zona horaria a la hora determinada y esta se formatea a la zona horaria universal UTC
